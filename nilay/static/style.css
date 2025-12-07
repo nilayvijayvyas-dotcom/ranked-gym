@@ -1,0 +1,704 @@
+/*whole bunch one css styles for the dashboard and other pages*/
+.dashboard-activity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.2em 0.8em;
+    background:
+        #232336;
+    border-radius: 8px;
+    padding: 0.8em 1.2em 0.6em 1.2em;
+    box-shadow: 0 1px 4px Drgba(0, 0, 0, 0.08);
+    color: #fff;
+    font-size: 1.05em;
+    margin-bottom: 0.7em;
+    position: relative;
+}
+
+.dashboard-activity-topleft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-weight: 600;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.dashboard-activity-topright {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-weight: 600;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.dashboard-activity-bottomleft {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: #a3a3a3;
+    font-size: 0.98em;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.dashboard-activity-bottomright {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: #3a3a3a;
+    font-size: 0.98em;
+    align-self: center;
+    text-align: center;
+}
+
+.exercise-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: flex-start;
+    margin-bottom: 0.7em;
+}
+
+.exercise-btn {
+    flex: 1 1 28%;
+    min-width: 120px;
+    max-width: 180px;
+    background: #29293d;
+    color: #fff;
+    border: 2px solid #35354a;
+    border-radius: 8px;
+    padding: 0.8em 0.5em;
+    font-size: lem;
+    cursor: pointer;
+    transition: background 0.2s, border 0.25, color 0.2s;
+    margin-bottom: 0.5em;
+}
+
+.exercise-btn.selected,
+.exercise-btn:active {
+    background: #6366f1;
+    color: #fff;
+    border-color: #6366f1;
+    box-shadow: 0 0 8px #6366f1aa;
+}
+
+.exercise-btn:hover {
+    background: #35354a;
+}
+
+.exercise-custom-row {
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.exercise-custom {
+    width: 60%;
+    min-width: 180px;
+}
+
+.dashboard-header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    margin-top: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.dashboard-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.dashboard-subheader {
+    font-size: 1.15em;
+    color: #a3a3a3;
+    margin-bottom: 1.2em;
+    margin-left: 0.1em;
+}
+
+.muscle-card-progress-bar {
+    width: 100%;
+    margin: 0.7em 0 0.7em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.muscle-card-progress-bg {
+    width: 90%;
+    height: 16px;
+    background: #232336;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1.5px solid #35354a;
+    box-shadow: 0 1px 4px Mrgba(0, 0, 0, 0.08);
+}
+
+.muscle-card-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1 0%, #ffb347 100%);
+    border-radius: 8px 0 0 8px;
+    transition: width 0.4s cubic-bezier(.4, 2, .6, 1);
+}
+
+.dashboard-card-streak {
+    background: linear-gradient(90deg,
+            #ffb347 0%, #ffcc33 100%);
+    color: #18181b;
+    box-shadow: 0 2px 12px rgba(255, 187, 51, 0.10);
+}
+
+/* Dashboard Top/Bottom Layout */
+.dashboard-top {
+    width: 100%;
+    margin: 2.5em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-stats-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.dashboard-bottom {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 2.5em 0 0 0;
+    min-height: 340px;
+}
+
+.dashboard-left {
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .2em 0 0;
+}
+
+.dashboard-log-btn {
+    background:
+        #6366f1;
+    color:
+        #fff;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 6px;
+    font-size: 1.1em;
+    margin-bottom: 0em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dashboard-log-btn:hover {
+    background:
+        #4f46e5
+}
+
+.dashboard-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 100%;
+}
+
+.dashboard-card {
+    background:
+        #232336;
+    border: 2px solid #35354a;
+    border-radius: 12px;
+    padding: 1.3em 2em;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px Drgba(0, 0, 0, 0.10);
+}
+
+.dashboard-card-title {
+    font-size: 1.1em;
+    color: #a3a3a3;
+    margin-bottom: 0.3em;
+}
+
+.dashboard-card-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff
+}
+
+.dashboard-divider {
+    width: 2px;
+    background:
+        #35354a;
+    margin: 0 2em;
+    border-radius: 2px;
+}
+
+.dashboard-right {
+    flex: 2 1 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 0 2em;
+}
+
+.dashboard-activity-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:
+        #a3a3a3;
+    margin-bottom: 1em;
+}
+
+.dashboard-activity-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dashboard-activity-item {
+    background: #232336;
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    ;
+    color: #fff;
+    font-size: 1.05em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.dashboard-activity-date {
+    font-size: 0.98em;
+    color: #a3a3a3;
+}
+
+.dashboard-activity-empty {
+    color: #a3a3a3;
+    font-size: 1.05em;
+    padding: 1em 0;
+}
+
+.muscle-card-header {
+    display: flex;
+    align-items: canter;
+    width: 100%;
+    margin-bottom: 0.7em;
+
+}
+
+.muscle-emoji {
+    font-size: 2.1em;
+    margin-right: 0.7em;
+    flex-shrink: 0;
+}
+
+.muscle-card-titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.muscle-card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    color:
+        #e4e4e7;
+}
+
+.muscle-card-subheader {
+    font-size: lem;
+    color:
+        #a3a3a3;
+    margin-top: 0.1em;
+}
+
+.muscle-card-pb {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 1.2em 0 1.2em 0;
+    color:
+        #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.muscle-card-pb span {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #6366f1;
+    margin-left: 0.5em;
+}
+
+.muscle-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 1.2em;
+}
+
+.muscle-card-rank {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.muscle-card-next {
+    font-size: 1em;
+    color:
+        #a3a3a3;
+    font-weight: 500;
+    /* Muscle Rankings Grid */
+}
+
+.muscle-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.muscle-card {
+    background:
+        #27272a;
+    border-radius: 10px;
+    padding: 1.2em 1.2em 1em 1.2em;
+    box-shadow: 0 2px 8px Mrgba(0, 0, 0, 0.10);
+    flex: 1 1 0;
+    min-width: 255px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0.2em;
+}
+
+.muscle-card h3 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+    color:
+        #a3a3a3;
+}
+
+/* Rank Key Box Styles */
+.rank-key-box {
+    background:
+        #232336;
+    border: 2px solid #35354a;
+    border-radius: 16px;
+    padding: 1.2em 2em 1.2em 2em;
+    margin: 2em 0 2.5em 0;
+    width: 100%;
+    max-width: 892px;
+    box-shadow: 0 4px 24px Orgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7em;
+}
+
+.rank-key-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    color: #a3a3a3;
+}
+
+.rank-key-row {
+    display: flex;
+    gap: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.rank-key-desc {
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+.log-row-center {
+    justify-content: center;
+}
+
+.log-input-notes {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Log Workout Box Styles */
+.log-box {
+    background:
+        #232336;
+    border: 2px solid #35354a;
+    border-radius: 16px;
+    padding: 2em 2em 1.5em 2em;
+    margin: 2em auto;
+    max-width: 950px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.log-row {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+}
+
+.log-row-3 {
+    display: flex;
+    gap: lem;
+    margin-bottom: 0.5em;
+}
+
+.log-label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color:
+        #e4e4e7;
+}
+
+.log-label-long {
+    flex: 1 1 100%;
+
+}
+
+.log-input {
+    margin-top: 0.4em;
+    padding: 0.7em 1em;
+    border-radius: 6px;
+    border: 1px solid #35354a;
+    background:
+        #29293d;
+    color: #fff;
+    font-size: 1em;
+}
+
+.log-input-long {
+    width: 100%;
+    min-width: 0;
+}
+
+.log-box button[type="submit"] {
+    margin-top: 1em;
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    border-radius: 6px;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.log-box button[type="submit"]:hover {
+    background:
+        #4f46e5;
+}
+
+.sidebar-btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    transition: 0.2s, color 0.2s;
+}
+
+.sidebar-btn.active {
+    background:
+        #6366f1;
+    color:
+        #fff;
+}
+
+.sidebar-btn:not(.active):hover {
+    background:
+        #23234a;
+    color: #fff;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    margin-bottom: 2em;
+}
+
+.logo {
+    font-size: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2em;
+    height: 2.2em;
+    background:
+        #6366f1;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 2px 8px Drgba(0, 0, 0, 0.10);
+
+}
+
+.app-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.app-subheader {
+    font-size: 0.95em;
+    color: #a3a3a3;
+    margin-top: 0.1em;
+    letter-spacing: 0.5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:
+        #18181b;
+    color: #f4f4f5;
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: #23232b;
+
+    padding: 2em 1em;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 0 8px Mrgba(0, 0, 0, 0.08);
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2em;
+}
+
+button {
+    background: #6366f1;
+
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+.card {
+    background: #27272a;
+    border-radius: 8px;
+    padding: 1em;
+    margin: lem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    gap: lem;
+    flex-wrap: wrap;
+}
+
+.stats {
+    flex: 1 1 150px;
+}
+
+.rank-key {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.rank-key span {
+    padding: 0.25em 0.75em;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.rank-iron {
+    background:
+        #a3a3a3;
+    color: #18181b;
+    box-shadow: 0 0 8px 1px #a3a3a3cc
+}
+
+.rank-bronze {
+    background:
+        #cd7f32;
+    color: #18181b;
+    box-shadow: 0 0 8px 1px #cd7f32cc;
+}
+
+.rank-silver {
+    background: #c0c0c0;
+    color: #18181b;
+    box-shadow: 0 0 8px 1px #c0c0c0cc;
+}
+
+.rank-gold {
+    background:
+        #ffd700;
+    color: #18181b;
+    box-shadow: 0 0 10px 2px #ffd700cc
+}
+
+.rank-platinum {
+    background:
+        #e5e4e2;
+    color: #18181b;
+    box-shadow: 0 0 10px 2px #e5e4e2cc
+}
